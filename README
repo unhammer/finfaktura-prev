@@ -15,6 +15,7 @@ Du finner mer informasjon om programmet, og informasjon om feilsøking på prosj
 .. _opsjoner: http://code.google.com/p/finfaktura/wiki/FakturaFraKommandolinja
 .. _Miljøvariabelen: http://code.google.com/p/finfaktura/wiki/StarteProgrammet
 .. _prosjektsidene: http://finfaktura.googlecode.com/
+.. _Foreløpig ny hjemmeside: http://www.solbu.net/
 
 Diskusjonsgruppe
 ================
@@ -24,7 +25,6 @@ Lurer du på noe? Er det noe som mangler?
 Ta en titt på diskusjonsgruppa, hvor nye versjoner og funksjoner blir diskutert, hvor problemer blir løst, og hvor solen aldri går ned:
 
 http://groups.google.com/group/finfaktura
-
 
 Systemkrav
 ==========
@@ -48,7 +48,7 @@ Opphavsrett
 ===========
 
 Idé og koding: Håvard Gulldahl <havard@gulldahl.no>
-Dette er åpen kildekode, du kan fritt gjenbruke og videredistribuere under GPL2-lisensen.
+Dette er Fri programvare, du kan fritt gjenbruke og videredistribuere under GPL2-lisensen.
 
 Se docs/LICENSE eller http://www.gnu.org/licenses/old-licenses/gpl-2.0.html#TOC1
 

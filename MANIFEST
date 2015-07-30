@@ -8,6 +8,7 @@ finfaktura/fakturafeil.py
 finfaktura/fakturabibliotek.py
 finfaktura/fakturakomponenter.py
 finfaktura/f60.py
+finfaktura/fil.py
 finfaktura/oppgradering.py
 finfaktura/okonomi.py
 finfaktura/sikkerhetskopi.py

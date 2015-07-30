@@ -1,3 +1,9 @@
+2015-07-30 v2.07 Johnny A. Solbu
+
+	* Ikke krev kontaktperson
+	* Fiks mellomrom mellom kr og beløp
+	* Ny maintainer.
+
 2009-04-12 19:27  havard.gulldahl
 
 	* finfaktura/f60.py: metadata

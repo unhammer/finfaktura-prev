@@ -88,7 +88,7 @@ except ImportError:
 __version__ = '0.16'
 __license__ = 'GPLv2'
 __author__ = 'H. Gulldahl (havard@gulldahl.no)'
-__date__ = '$Date$'
+__date__ = '$Date: 2009-04-13 21:45:25 +0200 (ma., 13 april 2009) $'
 
 try:
     REPORTLAB2 = (reportlab.Version[0] == '2')
@@ -358,11 +358,11 @@ class f60:
 
     def _kr(self, i):
         "Sørger for at et beløp skrives med riktig skilletegn og valuta. Returnerer tekst"
-        try:
-            if LOCALE:
-                return locale.currency(i)
-        except ValueError:
-            pass
+#        try:
+#            if LOCALE:
+#                return locale.currency(i)
+#        except ValueError:
+#            pass
         return "kr %.02f" % i
 
     def lagKlammer(self,punktX, punktY, deltaX, deltaY, tekst=None):

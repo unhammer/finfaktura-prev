@@ -767,7 +767,6 @@ class FinFaktura(QtGui.QMainWindow):#Ui_MainWindow): ## leser gui fra faktura_ui
 
         # sjekk om all nødvendig info er gitt
         kravkart = {self.gui.kundeInfoNavn: "Kundens navn",
-                    self.gui.kundeInfoKontaktperson: "Kontaktperson",
                     self.gui.kundeInfoEpost:"Epostadresse",
                     self.gui.kundeInfoAdresse: "Adresse",
                     self.gui.kundeInfoPoststed: "Poststed",

@@ -37,9 +37,9 @@ import finfaktura # for versjonsnummer
 setup(name="finfaktura",
       version=finfaktura.__version__,
       description="Fryktelig Fin Faktura - fakturaprogram for norske næringsdrivende",
-      author="Håvard Gulldahl",
-      author_email="havard@gulldahl.no",
-      url="http://finfaktura.googlecode.com/",
+      author="Johnny A. Solbu",
+      author_email="johnny@solbu.net",
+      url="http://sourceforge.net/projects/finfaktura/",
       packages=['finfaktura', 'finfaktura.ui'],
       data_files=[
             ('share/finfaktura/scripts', glob.glob('scripts/*')),

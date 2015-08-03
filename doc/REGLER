@@ -1,6 +1,7 @@
 ## Hvordan utvikle finfaktura
 ## $Id$
 ## Håvard Gulldahl <havard@gulldahl.no> (C) 2005-2009
+## Johnny A. Solbu <johnny@solbu.net> (C) 2015
 
 
 ### Lage ny release ###
@@ -12,19 +13,11 @@
     dch --newversion $VERSJON
     -> skrive inn hva som har skjedd siden $VERSJON-1
 
-* Laste ned svn-logg til ./ChangeLog
-    svn2cl # finnes på http://ch.tudelft.nl/~arthur/svn2cl/downloads.html
+* Commite endringer til git
+    git commit ChangeLog finfaktura/__init__.py debian/changelog -m "Gjør $VERSJON klar til utgivelse"
 
-* Commite endringer til svn
-    svn commit ChangeLog finfaktura/__init__.py debian/changelog -m "Gjør $VERSJON klar til utgivelse"
-
-* Kopiere til ny grein:
-    svn copy https://finfaktura.googlecode.com/svn/trunk https://finfaktura.googlecode.com/svn/branches/$VERSJON -m "Kopierer $VERSJON til egen gren"
-
-* Sjekke ut den nye greina, og begynne å jobbe på den
-    cd /tmp
-    svn co https://finfaktura.googlecode.com/svn/branches/$VERSJON
-    cd $VERSJON
+* Kopiere til ny grein og begynne å jobbe på den:
+    git checkout -b $VERSJON
 
 * Endre på PRODUKSJONSVERDI-variabelen (til True) i finfaktura/fakturabibliotek.py
     perl -pi -e 's/PRODUKSJONSVERSJON=False/PRODUKSJONSVERSJON=True/' finfaktura/fakturabibliotek.py
@@ -39,12 +32,9 @@
 * Test setup.py
     python setup.py sdist --format=zip
 
-* Sjekk ut wiki-sider for å installere dem i pakken
-    svn checkout https://finfaktura.googlecode.com/svn/wiki
-
 * Lage .deb
     #fakeroot debian/rules binary
-    debuild -khavard@lurtgjort.no
+    debuild 
 
 * Sjekk deb-fila
     dpkg-deb -c ../finfaktura_${VERSJON}*.deb # sjekk innholdet i pakken
@@ -61,51 +51,12 @@
    DISPLAY=:10 FAKTURADB=tmp/*/testdata.db faktura.py -d
 
 * Committe endringer til svn dersom .deb gikk smertefritt
-    svn commit -m "pakker og klargjør $VERSJON til produksjon"
-
-* Tagge versjonen dersom .deb gikk smertefritt
-    svn copy https://finfaktura.googlecode.com/svn/branches/$VERSJON https://finfaktura.googlecode.com/svn/tags/versjon-$VERSJON -m "Tagger ferdigstilt $VERSJON"
-
-* Lage skjermdump
-    doc/skjermdump.sh
-    <tilpasse navn og innhold etter skjermdump.sh>
-    svn co https://finfaktura.googlecode.com/svn/screenshots
-    #for b in skjermbilder-finfaktura-${VERSJON}*/*.png; do cp $z screenshots/$z;done
-    for z in skjermbilder-finfaktura-${VERSJON}*/*.png; do Z=$(basename "$z"); cp -f "$z" screenshots/"$Z";done
-    svn commit screenshots -m "Skjermbilder for ${VERSJON}"
+    git commit -m "pakker og klargjør $VERSJON til produksjon"
 
 
-* Kopier til http://code.google.com/p/finfaktura/downloads/entry
-    #http://support.googlecode.com/svn/trunk/scripts/googlecode-upload.py
-
-    -> .deb
-    googlecode-upload.py -s "Fryktelig Fin Faktura (debian/ubuntu), versjon $VERSJON" -p finfaktura -u havard.gulldahl -l "Featured,Type-Package,OpSys-Linux,Versjon-Ferdig" ../finfaktura_${VERSJON}_all.deb
-
-    -> .rpm
-    fakeroot alien --to-rpm --scripts --keep-version ../finfaktura_${VERSJON}_all.deb
-
-    googlecode-upload.py -s "Fryktelig Fin Faktura (fedora/suse), versjon $VERSJON" -p finfaktura -u havard.gulldahl -l "Featured,Type-Package,OpSys-Linux,Versjon-Ferdig" finfaktura-${VERSJON}*noarch.rpm
-
-    -> source
-    googlecode-upload.py -s "Fryktelig Fin Faktura (python kildekode), versjon $VERSJON" -p finfaktura -u havard.gulldahl -l "Featured,Type-Package,OpSys-All,Versjon-Ferdig" dist/finfaktura-${VERSJON}.zip
-
-    -> win
-    #winepython setup.py py2exe
-    #advzip -z -4 dist/finfaktura-win32-base-X_X_X.zip
-    #googlecode-upload.py -s "Fryktelig Fin Faktura Basedata, for versjoner X.X" -p finfaktura -u havard.gulldahl -l "OpSys-Windows,Versjon-Ferdig" dist/finfaktura-win32-base-X_X_X.zip
-    python -O -c "import compileall; compileall.compile_dir('finfaktura', force=1)"
-    zip -f dist/library.zip finfaktura/*.pyo finfaktura/ui/*.pyo
-    advzip -z -4 dist/library.zip
-    makensis finfaktura-installer.nsi
-    mv dist/finfaktura-netinstaller.exe dist/finfaktura-${VERSJON}-netinstaller.exe
-    googlecode-upload.py -s "Fryktelig Fin Faktura (win), versjon $VERSJON" -p finfaktura -u havard.gulldahl -l "Featured,Type-Installer,OpSys-Windows,Versjon-Ferdig" dist/finfaktura-${VERSJON}-netinstaller.exe
-
-    -> f60.py
-    F60VER=$(grep ^__version__ finfaktura/f60.py | sed -e 's/[^.0-9]//g'); echo $F60VER;
-    cp finfaktura/f60.py /tmp/f60-${F60VER}.py;
-    googlecode-upload.py -s "Python-modul for å lage faktura på GIRO F60-1 (versjon $F60VER)" -p finfaktura -u havard.gulldahl -l "Featured,OpSys-All,Versjon-Ferdig" /tmp/f60-${F60VER}.py;
-
+* Laste opp zip-fil (og eventuelle deb-, og rpm-filer) til SourceForge
     
+    rsync -avh --progress finfaktura-$VERSJON.zip solbu@frs.sourceforge.net:/home/frs/project/finfaktura/$VERSJON/
     
 
 * Hurra!

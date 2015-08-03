@@ -29,7 +29,8 @@
     FAKTURADIR=. ./faktura.py -d
     FAKTURADIR=. FAKTURADB=testdata.db ./faktura.py -d
 
-* Test setup.py
+* Lag tarball og zipfil med setup.py
+    python setup.py sdist
     python setup.py sdist --format=zip
 
 * Lage .deb

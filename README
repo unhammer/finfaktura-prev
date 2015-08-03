@@ -32,7 +32,7 @@ Programmet er laget for å kjøre på linux, windows og apple osx.
 
 Følgende moduler er påkrevet:
 
-- python_ Fryktelig fin faktura utvikles og testes i python2.5. Andre versjoner *kan* fungere
+- python_ Fryktelig fin faktura utvikles og testes i python2.7. Andre versjoner *kan* fungere
 - python-modulen PyQt4_, versjon 4.4
 - python-modulen Reportlab_
 

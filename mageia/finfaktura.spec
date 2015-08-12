@@ -1,7 +1,7 @@
 %define bname	faktura.py
 
 Name:		finfaktura
-Version:	2.0.7
+Version:	2.0.8
 Release:	%mkrel 1
 Summary:	Create, review and administer norwegian invoices
 License:	GPLv2
@@ -12,6 +12,7 @@ Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	desktop-file-utils
 Requires:	PyQt4
+Requires:	python-reportlab
 Requires:	sqlite3-tools
 
 %description
@@ -42,5 +43,8 @@ install -m644 %{name}.png -D %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 
 %changelog
+* Wed Aug 12 2015 Johnny A. Solbu <johnny@solbu.net> 2.0.8-1.solbu5
+- Version 2.0.8: Fix UnicodeDecodeError on startup
+
 * Wed Aug 05 2015 Johnny A. Solbu <johnny@solbu.net> 2.0.7-1.solbu5
 - Initial Mageia package

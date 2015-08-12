@@ -20,10 +20,10 @@ Diskusjonsgruppe
 ================
 
 Lurer du på noe? Er det noe som mangler?
-
 Ta en titt på diskusjonsgruppa, hvor nye versjoner og funksjoner blir diskutert, hvor problemer blir løst, og hvor solen aldri går ned:
-
 https://lists.sourceforge.net/lists/listinfo/finfaktura-support
+
+Vi har også en kanal på Freenode: #finfaktura
 
 Systemkrav
 ==========
@@ -32,9 +32,9 @@ Programmet er laget for å kjøre på GNU/Linux, Windows og Apple osx.
 
 Følgende moduler er påkrevet:
 
-- python_ Fryktelig fin faktura utvikles og testes i python2.7. Andre versjoner *kan* fungere
-- python-modulen PyQt4_, versjon 4.4
-- python-modulen Reportlab_
+- python_, versjon 2.5 eller nyere. Fryktelig fin faktura utvikles og testes i python2.7 (på Mageia Linux). Andre versjoner kan fungere
+- python-modulen PyQt4_, versjon 4.4 eller nyere.
+- python-modulen Reportlab_, versjon 2 og nyere.
 
 Disse oppfylles automatisk med når du installerer fra pakke (linux) eller medfølgende installasjonsprogram (windows).
 

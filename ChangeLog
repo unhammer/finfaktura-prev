@@ -1,3 +1,8 @@
+2015-08-12 v2.08 Johnny A. Solbu
+
+	* Fiks krasj med UnicodeDecodeError ved oppstart
+	* Noen steder har man kun postnummer og sted men ikke veiadresser, ikke krev veiadresse
+
 2015-07-30 v2.07 Johnny A. Solbu
 
 	* Ikke krev kontaktperson

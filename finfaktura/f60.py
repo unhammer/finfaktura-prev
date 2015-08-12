@@ -91,7 +91,7 @@ __author__ = 'H. Gulldahl (havard@gulldahl.no)'
 __date__ = '$Date: 2009-04-13 21:45:25 +0200 (ma., 13 april 2009) $'
 
 try:
-    REPORTLAB2 = (reportlab.Version[0] == '2')
+    REPORTLAB2 = (reportlab.Version[0] >= '2')
 except AttributeError, IndexError:
     logging.warn('Reportlab-versjon kunne ikke leses. Dette er ikke versjon 2')
     REPORTLAB2 = False

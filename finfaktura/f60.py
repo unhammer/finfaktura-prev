@@ -93,7 +93,7 @@ __date__ = '$Date: 2009-04-13 21:45:25 +0200 (ma., 13 april 2009) $'
 try:
     REPORTLAB2 = (reportlab.Version[0] >= '2')
 except AttributeError, IndexError:
-    logging.warn('Reportlab-versjon kunne ikke leses. Dette er ikke versjon 2')
+    logging.warn('Reportlab-versjon kunne ikke leses. Dette er ikke versjon 2 eller nyere')
     REPORTLAB2 = False
 
 PDFUTSKRIFT = '/usr/bin/okular'

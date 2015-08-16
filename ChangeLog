@@ -1,3 +1,7 @@
+2015-08-16 v2.09 Johnny A. Solbu
+
+	* finfaktura/f60.py: Kontrollsiffer til beløp beregnes på feil grunnlag
+
 2015-08-12 v2.08 Johnny A. Solbu
 
 	* Fiks krasj med UnicodeDecodeError ved oppstart

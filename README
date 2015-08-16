@@ -32,11 +32,11 @@ Programmet er laget for å kjøre på GNU/Linux, Windows og Apple osx.
 
 Følgende moduler er påkrevet:
 
-- python_, versjon 2.5 eller nyere. Fryktelig fin faktura utvikles og testes i python2.7 (på Mageia Linux). Andre versjoner kan fungere
+- python_, versjon 2.5 eller nyere. Fryktelig fin faktura utvikles og testes i python2.7 på Mageia Linux. Andre versjoner kan fungere.
 - python-modulen PyQt4_, versjon 4.4 eller nyere.
 - python-modulen Reportlab_, versjon 2 og nyere.
 
-Disse oppfylles automatisk med når du installerer fra pakke (linux) eller medfølgende installasjonsprogram (windows).
+Disse oppfylles automatisk når du installerer fra pakke (GNU/Linux) eller medfølgende installasjonsprogram (Windows).
 
 .. _python: http://python.org/
 .. _PyQt4: http://www.riverbankcomputing.com/software/pyqt/intro

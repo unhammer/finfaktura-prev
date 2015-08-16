@@ -42,23 +42,23 @@
     dpkg-deb -I ../finfaktura_${VERSJON}*.deb # sjekk innholdet i pakken
 
 * Installer programmet og prøv å starte/oppgradere det
-   Xephyr :10 -screen 1024x768 # el. 600x800
-   sudo pbuilder login --save-after-login
-   dpkg -i tmp/finfaktura_${VERSJON}_all.deb
-   #apt-get -f install
-   #apt-get install xbase-clients
-   #export XAUTHORITY=/root/.Xauthority
-   #xauth add xxx/unix:10 MIT-MAGIC-COOKIE-1 XXX
-   DISPLAY=:10 FAKTURADB=tmp/*/testdata.db faktura.py -d
+    Xephyr :10 -screen 1024x768 # el. 600x800
+    sudo pbuilder login --save-after-login
+    dpkg -i tmp/finfaktura_${VERSJON}_all.deb
+    #apt-get -f install
+    #apt-get install xbase-clients
+    #export XAUTHORITY=/root/.Xauthority
+    #xauth add xxx/unix:10 MIT-MAGIC-COOKIE-1 XXX
+    DISPLAY=:10 FAKTURADB=tmp/*/testdata.db faktura.py -d
 
-* Committe endringer til svn dersom .deb gikk smertefritt
+* Committe endringer til git dersom .deb gikk smertefritt
     git commit -m "pakker og klargjør $VERSJON til produksjon"
 
 
 * Laste opp zip-fil (og eventuelle deb-, og rpm-filer) til SourceForge
-    
+
     rsync -avh --progress finfaktura-$VERSJON.zip solbu@frs.sourceforge.net:/home/frs/project/finfaktura/$VERSJON/
-    
+
 
 * Hurra!
 

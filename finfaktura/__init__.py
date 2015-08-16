@@ -8,7 +8,7 @@
 # $Id$
 ###########################################################################
 
-__version__ = "2.0.8"
+__version__ = "2.0.9"
 
 __all__ = ['fakturabibliotek','oppgradering','f60','cli', 'sikkerhetskopi', 'okonomi', 'epost', 'historikk', 'ekstra', 'fakturafeil', 'fakturakomponenter', 'rapport', 'gui']
 

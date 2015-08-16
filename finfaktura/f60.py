@@ -716,7 +716,7 @@ Side: %i av %i
         # tolker 'beløp' som kr+ore.. er dette korrekt?
         # Håndboka sier også at mod10 skal brukes, testing viser at mange
         # fakturaer som er i omløp bruker mod11
-        siffer = self.lagKontrollsifferMod10("%s%s" % (kr, ore))
+        siffer = self.lagKontrollsifferMod10("%d%02d" % (kr, ore))
         self.canvas.drawString(120*mm, underkant, siffer)
 
     #def _lagNySide(self):

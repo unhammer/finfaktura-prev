@@ -66,7 +66,7 @@ class nummersetter(object):
 class nummersettergui(object):
   def __init__(self):
     self.help = nummersetter()
-    p = os.path.join(os.path.dirname(__file__), 'gui.ui')
+    p = os.path.join(os.path.dirname(__file__), 'fakturanummer.ui')
     self.gui = uic.loadUi(p)
     self.gui.connect(self.gui.databasenavn, QtCore.SIGNAL('activated(QString)'), self.slotDatabaseValgt)
     self.gui.connect(self.gui.settFakturanummer, QtCore.SIGNAL('clicked()'), self.slotSettFakturanummer)

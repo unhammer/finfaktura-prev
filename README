@@ -12,8 +12,7 @@ $ FAKTURADIR=/var/fakturadb ./faktura.py
 Du finner mer informasjon om programmet, og informasjon om feilsøking på prosjektsidene_.
 
 .. _pdf: http://en.wikipedia.org/wiki/Portable_Document_Format
-.. _opsjoner: http://code.google.com/p/finfaktura/wiki/FakturaFraKommandolinja
-.. _Miljøvariabelen: http://code.google.com/p/finfaktura/wiki/StarteProgrammet
+.. _opsjoner og miljøvariabler: https://sourceforge.net/p/finfaktura/wiki/Starte%20programmet/
 .. _prosjektsidene: https://sourceforge.net/projects/finfaktura/
 
 Diskusjonsgruppe
@@ -34,7 +33,7 @@ Følgende moduler er påkrevet:
 
 - python_, versjon 2.5 eller nyere. Fryktelig fin faktura utvikles og testes i python2.7 på Mageia Linux. Andre versjoner kan fungere.
 - python-modulen PyQt4_, versjon 4.4 eller nyere.
-- python-modulen Reportlab_, versjon 2 og nyere.
+- python-modulen Reportlab_, versjon 2 eller nyere.
 
 Disse oppfylles automatisk når du installerer fra pakke (GNU/Linux) eller medfølgende installasjonsprogram (Windows).
 

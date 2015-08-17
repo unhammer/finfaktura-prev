@@ -298,7 +298,7 @@ class fakturaOrdre(fakturaKomponent):
             raise FakturaFeil('%s er ikke en gyldig katalog' % fullkat)
         n = os.path.join(fullkat, "faktura-%06d-%s-%s-%s.pdf" % (self.ID,
                                                                  fakturatype,
-                                                                 self.kunde.navn.replace(" ", "_"),
+                                                                 self.kunde.navn.replace(" ", "_").replace("/", "_"),
                                                                  time.strftime("%Y-%m-%d")))
         logging.debug('lagFilnavn ble til %s', unicode(n))
         return unicode(n)

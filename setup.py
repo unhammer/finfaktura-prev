@@ -17,7 +17,7 @@ import sys, os, os.path, glob
 
 try:
   import py2exe
-  extra = {'console':['faktura.py'],
+  extra = {'console':['faktura'],
            'options': { 'py2exe' : {
                                      'optimize': 2,
                                      'includes': ['sip', 'socket', 'xml.etree.ElementTree'], # list of modules to include
@@ -44,7 +44,7 @@ setup(name="finfaktura",
       data_files=[
             ('share/finfaktura/scripts', glob.glob('scripts/*')),
            ],
-      scripts=["faktura.py"],
+      scripts=["faktura"],
       license="GPL2",
       long_description=file(os.path.split(os.path.realpath(sys.argv[0]))[0] + "/README").read(),
       **extra

@@ -3,11 +3,11 @@ Fryktelig fin faktura
 
 Dette er et enkelt program for å lage fakturaer. Fakturaene lages som pdf_ og kan skrives ut på skjema f60 eller sendes som epost. Programmet lager en database over varer, kunder, og utsendte fakturaer.
 
-Programmet startes ved å kjøre faktura.py. For tekstmodus, bruk opsjonen -i. Flere opsjoner_ er også mulig.
+Programmet startes ved å kjøre «faktura». For tekstmodus, bruk opsjonen -i. Flere opsjoner_ er også mulig.
 
 Miljøvariabelen_ FAKTURADIR kan brukes til å styre hvor databasen skal lagres. Eksempel:
 
-$ FAKTURADIR=/var/fakturadb ./faktura.py
+$ FAKTURADIR=/var/fakturadb ./faktura
 
 Du finner mer informasjon om programmet, og informasjon om feilsøking på prosjektsidene_.
 

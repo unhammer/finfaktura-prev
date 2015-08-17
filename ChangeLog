@@ -1,6 +1,7 @@
 2015-08-16 v2.09 Johnny A. Solbu
 
 	* finfaktura/f60.py: Kontrollsiffer til beløp beregnes på feil grunnlag
+	* Fiks Bug 81. Erstat «/» med «_» ved generering av pdf-filer hvor firmanavn har slash i navnet (A/S)
 
 2015-08-12 v2.08 Johnny A. Solbu
 

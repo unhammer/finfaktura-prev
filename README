@@ -4,7 +4,6 @@ Fryktelig fin faktura
 Dette er et enkelt program for å lage fakturaer. Fakturaene lages som pdf_ og kan skrives ut på skjema f60 eller sendes som epost. Programmet lager en database over varer, kunder, og utsendte fakturaer.
 
 Programmet startes ved å kjøre «faktura». For tekstmodus, bruk opsjonen -i. Flere opsjoner_ er også mulig.
-
 Miljøvariabelen_ FAKTURADIR kan brukes til å styre hvor databasen skal lagres. Eksempel:
 
 $ FAKTURADIR=/var/fakturadb ./faktura
@@ -14,6 +13,14 @@ Du finner mer informasjon om programmet, og informasjon om feilsøking på prosj
 .. _pdf: http://en.wikipedia.org/wiki/Portable_Document_Format
 .. _opsjoner og miljøvariabler: https://sourceforge.net/p/finfaktura/wiki/Starte%20programmet/
 .. _prosjektsidene: https://sourceforge.net/projects/finfaktura/
+
+Endre fakturanummer
+===================
+
+Det er nå mulig å endre første fakturanummer, men det virker kun dersom du ikke allerede har laget fakturaer. 
+Dette kan kun gjøres én gang. Du kan ikke endre dette tallet senere.
+i mappen scripts/ kan du kjøre programmet «./fakturanummer.py» og følge instruksjonene.
+Installerte du programmet via en GNU/Linux-pakke, finner du filen her: «/usr/share/finfaktura/scripts/fakturanummer.py»
 
 Diskusjonsgruppe
 ================

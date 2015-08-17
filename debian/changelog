@@ -1,3 +1,10 @@
+finfaktura (2.0.9-1) stable; urgency=low
+
+  * Ny versjon
+  * Ny maintainer
+
+ -- Johnny A. Solbu <johnny@solbu.net>  Mon, 17 Aug 2015 17:27:45 +0200
+
 finfaktura (2.0.6b) karmic; urgency=low
 
   * Fikser installasjon på systemer som har både python2.5 og 2.6 installert (bl.a. Ubuntu 9.04)

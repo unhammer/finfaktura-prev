@@ -42,7 +42,7 @@ install: build
 	scripts/forbered_ressurser.sh 
 	$(DH_PY_INTERPRETER) setup.py install --install-layout deb --root $(CURDIR)/debian/tmp
 	# Nuke *.pyc files that shouldn't be packaged
-	find debian/finfaktura -name "*.pyc" -exec rm {} \;
+	find debian/ -name "*.pyc" -exec rm -f {} \;
 	dh_install -s --exclude=svn
 
 # Must not depend on anything. This is to be called by
@@ -70,7 +70,7 @@ binary-common:
 	dh_compress
 	dh_fixperms
 #	dh_perl
-	dh_pycentral
+#	dh_pycentral
 	dh_makeshlibs
 	dh_installdeb
 	dh_shlibdeps

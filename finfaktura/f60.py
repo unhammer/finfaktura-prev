@@ -274,7 +274,7 @@ class f60:
             _sum += j
         r = 10 - (_sum % 10)
         if r == 10:
-            return 0
+            return '0'
         else:
             return str(r)
 

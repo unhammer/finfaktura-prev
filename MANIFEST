@@ -33,5 +33,5 @@ LICENSE
 finfaktura.png
 finfaktura.desktop
 scripts/oppgrader-databasen-til-1.0.sh
-scripts/ff-fakturanummer/fakturanummer.ui
-scripts/ff-fakturanummer/fakturanummer.py
+scripts/fakturanummer.ui
+scripts/fakturanummer.py

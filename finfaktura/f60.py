@@ -272,7 +272,11 @@ class f60:
                 j *= 2
                 if j > 9: j -= 9
             _sum += j
-        return str(10 - (_sum % 10))
+        r = 10 - (_sum % 10)
+        if r == 10:
+            return 0
+        else:
+            return str(r)
 
     def lagKontrollsifferMod11(self, tallrekke):
         "Lager mod11 kontrollsiffer for en tallrekke. Returnerer en tekststreng"

@@ -30,8 +30,7 @@
     FAKTURADIR=. FAKTURADB=testdata.db ./faktura.py -d
 
 * Lag tarball og zipfil med setup.py
-    python setup.py sdist
-    python setup.py sdist --format=zip
+    python setup.py sdist && python setup.py sdist --format=zip
 
 * Lage .deb
     #fakeroot debian/rules binary

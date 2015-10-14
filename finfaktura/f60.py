@@ -264,7 +264,7 @@ class f60:
         #hvert andre siffer (bakfra) skal dobles og tverrsummene av alle produktene legges sammen
         #totalsummen skal så moduleres med 10, uten rest
         # sjekk eksempel i BBS' systemspek for OCR, side 14
-        # (kopi på http://code.google.com/p/finfaktura/issues/detail?id=38)
+        # (kopi på http://sourceforge.net/p/finfaktura/tickets/38/)
         # Takk til cbratli
         _sum = 0
         for i, j in enumerate(map(int, reversed(tallrekke))):
@@ -281,7 +281,7 @@ class f60:
     def lagKontrollsifferMod11(self, tallrekke):
         "Lager mod11 kontrollsiffer for en tallrekke. Returnerer en tekststreng"
         # sjekk eksempel i BBS' systemspek for OCR, side 14
-        # (kopi på http://code.google.com/p/finfaktura/issues/detail?id=38)
+        # (kopi på http://sourceforge.net/p/finfaktura/tickets/38/)
         # Takk til cbratli
         _sum = 0
         vekt = 0
@@ -399,7 +399,7 @@ class f60:
         # 210 x 297
         # faktura spek:
         # Norsk Standard Skjema F60-1
-        # url: http://code.google.com/p/finfaktura/issues/detail?id=38
+        # url: http://sourceforge.net/p/finfaktura/tickets/38/
         self.canvas.saveState()
         self.canvas.setFillColor(yellow)
         # Lag de gule feltene
@@ -695,11 +695,11 @@ Side: %i av %i
         self.canvas.drawText(firmaadresse)
 
         # Blankettens underkant
-        # (se http://code.google.com/p/finfaktura/issues/detail?id=38, punkt A)
+        # (se http://sourceforge.net/p/finfaktura/tickets/38/, punkt A)
         underkant = 5.0/6.0 * inch
         
         # Den fortrykte H -- innstillingsmerke
-        # (se http://code.google.com/p/finfaktura/issues/detail?id=38)
+        # (se http://sourceforge.net/p/finfaktura/tickets/38/)
         self.canvas.drawString(2*mm, underkant, 'H')
 
         # KID

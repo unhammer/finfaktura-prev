@@ -7,7 +7,7 @@
 ### Lage ny release ###
 
 * Dytte på versjonsnummeret i finfaktura/__init__.py => $VERSJON
-    export VERSJON=$(./faktura.py -v); echo $VERSJON;
+    export VERSJON=$(./faktura -v); echo $VERSJON;
 
 * Oppgradere debian changelog
     dch --newversion $VERSJON
@@ -26,8 +26,8 @@
     scripts/forbered_ressurser.sh
 
 * Prøvestarte programmet og se at alt ser greit ut
-    FAKTURADIR=. ./faktura.py -d
-    FAKTURADIR=. FAKTURADB=testdata.db ./faktura.py -d
+    FAKTURADIR=. ./faktura -d
+    FAKTURADIR=. FAKTURADB=testdata.db ./faktura -d
 
 * Lag tarball og zipfil med setup.py
     python setup.py sdist && python setup.py sdist --format=zip
@@ -48,7 +48,7 @@
     #apt-get install xbase-clients
     #export XAUTHORITY=/root/.Xauthority
     #xauth add xxx/unix:10 MIT-MAGIC-COOKIE-1 XXX
-    DISPLAY=:10 FAKTURADB=tmp/*/testdata.db faktura.py -d
+    DISPLAY=:10 FAKTURADB=tmp/*/testdata.db faktura -d
 
 * Committe endringer til git dersom .deb gikk smertefritt
     git commit -m "pakker og klargjør $VERSJON til produksjon"

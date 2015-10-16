@@ -85,7 +85,7 @@ except ImportError:
     REPORTLAB=False
     raise f60InstallasjonsFeil("python-modulen `reportlab' mangler. Kan ikke lage PDF!")
 
-__version__ = '0.17'
+__version__ = '0.18'
 __license__ = 'GPLv2'
 __author__ = 'H. Gulldahl (havard@gulldahl.no)'
 __date__ = '$Date: 2015-08-16 20:49:16 +0200 (sø. 16. aug. 2015) $'
@@ -537,8 +537,8 @@ Epost: %(epost)s""" % (self.firma), "\n"))
         totalsider = 1
         fakturafakta = self.canvas.beginText()
         fakturafakta.setTextOrigin(150*mm, 260*mm)
-        fakturafakta.textLines("""FAKTURA
-Fakturanr : %04i
+        fakturafakta.textLines(split("""FAKTURA
+Fakturanr: %04i
 Leveringsdato: %s
 Fakturadato: %s
 Forfallsdato: %s
@@ -548,7 +548,7 @@ Side: %i av %i
                self.faktura['utstedt'],
                self.faktura['forfall'],
                sidenr, # FIXME: løpe over flere sider
-               totalsider)
+               totalsider), '\n')
                )
         self.canvas.drawText(fakturafakta)
 

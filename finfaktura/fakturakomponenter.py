@@ -384,7 +384,7 @@ class fakturaFirmainfo(fakturaKomponent):
                "%(postnummer)04i %(poststed)s" % (self._egenskaper)
 
     def sjekkData(self):
-        sjekk = ["firmanavn", "kontaktperson", "adresse", "postnummer", "poststed", "kontonummer", "organisasjonsnummer","epost"]
+        sjekk = ["firmanavn", "kontaktperson", "adresse", "postnummer", "poststed", "kontonummer", "epost"]
         mangler = [felt for felt in sjekk if not getattr(self, felt)]
         if mangler: raise FirmainfoFeil(u"Følgende felt er ikke fylt ut: %s" % join(mangler, ", "))
 

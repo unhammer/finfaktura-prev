@@ -24,7 +24,7 @@ class firmaOppsett(firmainfo_ui.Ui_firmaOppsett):
 
         self._kontrollkart = {
             self.Firmanavn:'Firmanavn',
-            self.Organisasjonsnummer:u'Organisasjonsnummer fra Brønnøysund',
+            #self.Organisasjonsnummer:u'Organisasjonsnummer fra Brønnøysund',
             self.Kontaktperson:'Kontaktperson',
             self.Epost:'Epostadresse',
             self.Adresse:'Adresse',

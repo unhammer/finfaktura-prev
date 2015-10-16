@@ -1,15 +1,21 @@
-2015-08-17 v2.09 Johnny A. Solbu
+2015-10-17 v2.0.10 Johnny A. Solbu
+
+	* finfaktura/f60.py: Fikser bug 86, hvor reportlab 3 ikke laget fakturaer med fakturafakta.
+	* Fjerner siste rest av linker til Google code-siden
+	* Ikke krev organisasjonsnummer. Ikke alle som fakturerer har organisasjonsnummer.
+
+2015-08-17 v2.0.9 Johnny A. Solbu
 
 	* finfaktura/f60.py: Kontrollsiffer til beløp beregnes på feil grunnlag
 	* Fiks Bug 81. Erstat «/» med «_» ved generering av pdf-filer hvor firmanavn har slash i navnet (A/S)
 	* Endre navn på kommandofil: faktura.py -> faktura, for korrekt installasjon på GNU/Linux
 
-2015-08-12 v2.08 Johnny A. Solbu
+2015-08-12 v2.0.8 Johnny A. Solbu
 
 	* Fiks krasj med UnicodeDecodeError ved oppstart
 	* Noen steder har man kun postnummer og sted men ikke veiadresser, ikke krev veiadresse
 
-2015-07-30 v2.07 Johnny A. Solbu
+2015-07-30 v2.0.7 Johnny A. Solbu
 
 	* Ikke krev kontaktperson
 	* Fiks mellomrom mellom kr og beløp

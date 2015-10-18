@@ -54,7 +54,7 @@
      <string>Katalog for sikkerhetskopier</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="sikkerhetskopiKatalog">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -119,27 +119,11 @@
    <property name="title">
     <string>Gjenopprett</string>
    </property>
-   <widget class="QLabel" name="textLabel2_5">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>38</y>
-      <width>172</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Gjenopprett fra:</string>
-    </property>
-    <property name="wordWrap">
-     <bool>false</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="textLabel4_3">
     <property name="geometry">
      <rect>
-      <x>196</x>
-      <y>90</y>
+      <x>180</x>
+      <y>100</y>
       <width>699</width>
       <height>14</height>
      </rect>
@@ -157,21 +141,11 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox10">
-    <property name="geometry">
-     <rect>
-      <x>196</x>
-      <y>63</y>
-      <width>523</width>
-      <height>23</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QRadioButton" name="radioButton5">
     <property name="geometry">
      <rect>
-      <x>196</x>
-      <y>38</y>
+      <x>180</x>
+      <y>48</y>
       <width>172</width>
       <height>21</height>
      </rect>
@@ -183,8 +157,8 @@
    <widget class="QLabel" name="textLabel1_6">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>20</y>
+      <x>4</x>
+      <y>30</y>
       <width>875</width>
       <height>14</height>
      </rect>
@@ -199,27 +173,47 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="textLabel2_5_2">
+   <widget class="QRadioButton" name="radioButton5_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>63</y>
-      <width>172</width>
+      <x>334</x>
+      <y>50</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Filsystem</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox10">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>73</y>
+      <width>523</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton29">
+    <property name="geometry">
+     <rect>
+      <x>531</x>
+      <y>118</y>
+      <width>348</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>Tilgjengelig:</string>
-    </property>
-    <property name="wordWrap">
-     <bool>false</bool>
+     <string>Gjenopprett fra valgt sikkerhetskopi</string>
     </property>
    </widget>
    <widget class="QLabel" name="textLabel3_3">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>90</y>
+      <x>4</x>
+      <y>100</y>
       <width>172</width>
       <height>14</height>
      </rect>
@@ -231,30 +225,36 @@
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton29">
+   <widget class="QLabel" name="textLabel2_5">
     <property name="geometry">
      <rect>
-      <x>547</x>
-      <y>108</y>
-      <width>348</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Gjenopprett fra valgt sikkerhetskopi</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="radioButton5_2">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>40</y>
-      <width>171</width>
+      <x>4</x>
+      <y>48</y>
+      <width>172</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>Filsystem</string>
+     <string>Gjenopprett fra:</string>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="textLabel2_5_2">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>73</y>
+      <width>172</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tilgjengelig:</string>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
     </property>
    </widget>
   </widget>

@@ -18,4 +18,8 @@
   <qresource prefix="sql" >
     <file>faktura.sql</file>
   </qresource>
+  <qresource>
+    <file>translations/finfaktura_no.qm</file>
+    <file>translations/finfaktura_nn.qm</file>
+  </qresource>
 </RCC>

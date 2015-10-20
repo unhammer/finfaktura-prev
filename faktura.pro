@@ -18,5 +18,4 @@ FORMS += scripts/fakturanummer.ui \
 RESOURCES += faktura.qrc
 
 TRANSLATIONS	= translations/finfaktura_no.ts \
-                  translations/finfaktura_nn.ts \
-                  translations/finfaktura_en.ts
+                  translations/finfaktura_nn.ts

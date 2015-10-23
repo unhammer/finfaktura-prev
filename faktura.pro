@@ -17,5 +17,5 @@ FORMS += scripts/fakturanummer.ui \
          finfaktura/ui/sikkerhetskopi.ui
 RESOURCES += faktura.qrc
 
-TRANSLATIONS	= translations/finfaktura_no.ts \
+TRANSLATIONS	= translations/finfaktura_nb.ts \
                   translations/finfaktura_nn.ts

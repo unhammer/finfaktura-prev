@@ -17,11 +17,11 @@ def forbered_ressurser():
     rc_files = ['faktura.qrc',]
 
     for f in ui_files:
-        ret = subprocess.call('pyuic4 -x -o "%s" "%s"' % (os.path.splitext(f)[0] + '_ui.py', f))
+        ret = subprocess.call(['pyuic4', '-x', '-o', os.path.splitext(f)[0] + '_ui.py', f])
         print "%s: %s" % (f, ok(ret))
     for f in rc_files:
-        plassering = os.path.join('finfakura', 'ui', os.path.splitext(f)[0] + '_rc.py')
-        ret = subprocess.call('pyrcc4 -o "%s" "%s"' % (plassering, f))
+        plassering = os.path.join('finfaktura', 'ui', os.path.splitext(f)[0] + '_rc.py')
+        ret = subprocess.call(['pyrcc4', '-o', plassering, f])
         print "%s -> %s: %s" % (f, plassering, ok(ret))
 
 def ok(status):

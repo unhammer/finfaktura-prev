@@ -6,43 +6,43 @@
     <message>
         <location filename="../finfaktura/ui/sikkerhetskopi.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Dialog</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sikkerhetskopi.ui" line="42"/>
         <location filename="../finfaktura/ui/sikkerhetskopi.ui" line="186"/>
         <source>Filsystem</source>
-        <translation type="unfinished"></translation>
+        <translation>Filsystem</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sikkerhetskopi.ui" line="54"/>
         <source>Katalog for sikkerhetskopier</source>
-        <translation type="unfinished"></translation>
+        <translation>Katalog for sikkerhetskopier</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sikkerhetskopi.ui" line="67"/>
         <source>~</source>
-        <translation type="unfinished"></translation>
+        <translation>~</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sikkerhetskopi.ui" line="80"/>
         <source>Lag sikkerhetskopi hver gang jeg legger inn en ny faktura</source>
-        <translation type="unfinished"></translation>
+        <translation>Lag sikkerhetskopi hver gang jeg legger inn en ny faktura</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sikkerhetskopi.ui" line="93"/>
         <source>Lag sikkerhetskopi automatisk hver gang jeg lukker programmet</source>
-        <translation type="unfinished"></translation>
+        <translation>Lag sikkerhetskopi automatisk hver gang jeg lukker programmet</translation>
     </message>
     <message utf8="true">
         <location filename="../finfaktura/ui/sikkerhetskopi.ui" line="106"/>
         <source>Søk...</source>
-        <translation type="unfinished"></translation>
+        <translation>Søk...</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sikkerhetskopi.ui" line="120"/>
         <source>Gjenopprett</source>
-        <translation type="unfinished"></translation>
+        <translation>Gjenopprett</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sikkerhetskopi.ui" line="132"/>
@@ -52,32 +52,32 @@
     <message>
         <location filename="../finfaktura/ui/sikkerhetskopi.ui" line="154"/>
         <source>Gmail</source>
-        <translation type="unfinished"></translation>
+        <translation>Gmail</translation>
     </message>
     <message utf8="true">
         <location filename="../finfaktura/ui/sikkerhetskopi.ui" line="167"/>
         <source>Dette gjenoppretter databasen fra en &lt;b&gt;gammel versjon&lt;/b&gt;. Dette må du bare gjøre dersom du er sikker på hva du gjør!</source>
-        <translation type="unfinished"></translation>
+        <translation>Dette gjenoppretter databasen fra en &lt;b&gt;gammel versjon&lt;/b&gt;. Dette må du bare gjøre dersom du er sikker på hva du gjør!</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sikkerhetskopi.ui" line="209"/>
         <source>Gjenopprett fra valgt sikkerhetskopi</source>
-        <translation type="unfinished"></translation>
+        <translation>Gjenopprett fra valgt sikkerhetskopi</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sikkerhetskopi.ui" line="222"/>
         <source>Informasjon:</source>
-        <translation type="unfinished"></translation>
+        <translation>Informasjon:</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sikkerhetskopi.ui" line="238"/>
         <source>Gjenopprett fra:</source>
-        <translation type="unfinished"></translation>
+        <translation>Gjenopprett fra:</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sikkerhetskopi.ui" line="254"/>
         <source>Tilgjengelig:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tilgjengelig:</translation>
     </message>
 </context>
 <context>
@@ -692,53 +692,53 @@
     <message>
         <location filename="../finfaktura/ui/finfaktura_oppsett.ui" line="17"/>
         <source>Oppgi eksterne programmer</source>
-        <translation type="unfinished"></translation>
+        <translation>Oppgi eksterne programmer</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/finfaktura_oppsett.ui" line="33"/>
         <source>Hjelpeprogrammer</source>
-        <translation type="unfinished"></translation>
+        <translation>Hjelpeprogrammer</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/finfaktura_oppsett.ui" line="39"/>
         <source>Vis PDF</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis PDF</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/finfaktura_oppsett.ui" line="58"/>
         <source>Et program som kan vise PDF-filer</source>
-        <translation type="unfinished"></translation>
+        <translation>Et program som kan vise PDF-filer</translation>
     </message>
     <message utf8="true">
         <location filename="../finfaktura/ui/finfaktura_oppsett.ui" line="74"/>
         <location filename="../finfaktura/ui/finfaktura_oppsett.ui" line="90"/>
         <source>Søk...</source>
-        <translation type="unfinished"></translation>
+        <translation>Søk...</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/finfaktura_oppsett.ui" line="84"/>
         <source>Plasseringer</source>
-        <translation type="unfinished"></translation>
+        <translation>Plasseringer</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/finfaktura_oppsett.ui" line="97"/>
         <source>Katalog blir PDF-fakturaene lagret</source>
-        <translation type="unfinished"></translation>
+        <translation>Katalog blir PDF-fakturaene lagret</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/finfaktura_oppsett.ui" line="100"/>
         <source>~</source>
-        <translation type="unfinished"></translation>
+        <translation>~</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/finfaktura_oppsett.ui" line="107"/>
         <source>Katalog for fakturaer</source>
-        <translation type="unfinished"></translation>
+        <translation>Katalog for fakturaer</translation>
     </message>
     <message utf8="true">
         <location filename="../finfaktura/ui/finfaktura_oppsett.ui" line="120"/>
         <source>(Katalogen må eksistere)</source>
-        <translation type="unfinished"></translation>
+        <translation>(Katalogen må eksistere)</translation>
     </message>
 </context>
 <context>
@@ -746,52 +746,52 @@
     <message utf8="true">
         <location filename="../scripts/fakturanummer.ui" line="13"/>
         <source>Finfaktura: sett første fakturanummer</source>
-        <translation type="unfinished"></translation>
+        <translation>Finfaktura: sett første fakturanummer</translation>
     </message>
     <message>
         <location filename="../scripts/fakturanummer.ui" line="20"/>
         <source>&amp;Velg fakturadatabase:</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Velg fakturadatabase:</translation>
     </message>
     <message>
         <location filename="../scripts/fakturanummer.ui" line="40"/>
         <source>Detaljer om valgt database</source>
-        <translation type="unfinished"></translation>
+        <translation>Detaljer om valgt database</translation>
     </message>
     <message>
         <location filename="../scripts/fakturanummer.ui" line="46"/>
         <source>Filnavn:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filnavn:</translation>
     </message>
     <message>
         <location filename="../scripts/fakturanummer.ui" line="60"/>
         <source>Firmanavn:</source>
-        <translation type="unfinished"></translation>
+        <translation>Firmanavn:</translation>
     </message>
     <message>
         <location filename="../scripts/fakturanummer.ui" line="74"/>
         <source>Sist endret:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sist endret:</translation>
     </message>
     <message>
         <location filename="../scripts/fakturanummer.ui" line="88"/>
         <source>Status:</source>
-        <translation type="unfinished"></translation>
+        <translation>Status:</translation>
     </message>
     <message>
         <location filename="../scripts/fakturanummer.ui" line="102"/>
         <source>Fakturaer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fakturaer:</translation>
     </message>
     <message utf8="true">
         <location filename="../scripts/fakturanummer.ui" line="122"/>
         <source>Sett første fakturanummer</source>
-        <translation type="unfinished"></translation>
+        <translation>Sett første fakturanummer</translation>
     </message>
     <message utf8="true">
         <location filename="../scripts/fakturanummer.ui" line="128"/>
         <source>Hva skal &amp;første fakturanummer være:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hva skal &amp;første fakturanummer være:</translation>
     </message>
     <message utf8="true">
         <location filename="../scripts/fakturanummer.ui" line="151"/>
@@ -800,19 +800,25 @@
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Vær nøye! For du kan ikke sette et &lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;annet&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt; nummer senere.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Vær nøye! For du kan ikke sette et &lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;annet&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt; nummer senere.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../scripts/fakturanummer.ui" line="162"/>
         <source>&amp;Sett fakturanummer</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sett fakturanummer</translation>
     </message>
     <message utf8="true">
         <location filename="../scripts/fakturanummer.ui" line="172"/>
         <source>&lt;p&gt;Dersom du går over fra et annet fakturasystem, kan du sette første fakturanummer for Fryktelig Fin Faktura.&lt;/p&gt;
 
 &lt;p&gt;Dette kan du bare gjøre &lt;b&gt;dersom du ikke har begynt å lage fakturaer&lt;/b&gt; i Fryktelig Fin Faktura, altså før første faktura er laget.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Dersom du går over fra et annet fakturasystem, kan du sette første fakturanummer for Fryktelig Fin Faktura.&lt;/p&gt;
+
+&lt;p&gt;Dette kan du bare gjøre &lt;b&gt;dersom du ikke har begynt å lage fakturaer&lt;/b&gt; i Fryktelig Fin Faktura, altså før første faktura er laget.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -820,104 +826,104 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="13"/>
         <source>Oppsett av epost</source>
-        <translation type="unfinished"></translation>
+        <translation>Oppsett av epost</translation>
     </message>
     <message utf8="true">
         <location filename="../finfaktura/ui/epost.ui" line="40"/>
         <source>Epostløsning for sending av e-faktura</source>
-        <translation type="unfinished"></translation>
+        <translation>Epostløsning for sending av e-faktura</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="48"/>
         <source>Velg automatisk</source>
-        <translation type="unfinished"></translation>
+        <translation>Velg automatisk</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="67"/>
         <location filename="../finfaktura/ui/epost.ui" line="205"/>
         <source>SMTP</source>
-        <translation type="unfinished"></translation>
+        <translation>SMTP</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="77"/>
         <location filename="../finfaktura/ui/epost.ui" line="155"/>
         <source>Sendmail</source>
-        <translation type="unfinished"></translation>
+        <translation>Sendmail</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="108"/>
         <source>Test forbindelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Test forbindelse</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="121"/>
         <source>Send kopi av e-faktura</source>
-        <translation type="unfinished"></translation>
+        <translation>Send kopi av e-faktura</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="136"/>
         <source>Send kopi (BCC) til:</source>
-        <translation type="unfinished"></translation>
+        <translation>Send kopi (BCC) til:</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="161"/>
         <source>Sti til sendmail:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sti til sendmail:</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="174"/>
         <source>/usr/sbin/sendmail</source>
-        <translation type="unfinished"></translation>
+        <translation>/usr/sbin/sendmail</translation>
     </message>
     <message utf8="true">
         <location filename="../finfaktura/ui/epost.ui" line="181"/>
         <source>Søk...</source>
-        <translation type="unfinished"></translation>
+        <translation>Søk...</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="213"/>
         <source>Bruk server:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bruk server:</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="232"/>
         <source>localhost</source>
-        <translation type="unfinished"></translation>
+        <translation>localhost</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="239"/>
         <source>Port:</source>
-        <translation type="unfinished"></translation>
+        <translation>Port:</translation>
     </message>
     <message utf8="true">
         <location filename="../finfaktura/ui/epost.ui" line="273"/>
         <source>Serveren støtter krypterte overføringer (TLS)</source>
-        <translation type="unfinished"></translation>
+        <translation>Serveren støtter krypterte overføringer (TLS)</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="283"/>
         <source>Brukernavn og passord for SMTP Auth</source>
-        <translation type="unfinished"></translation>
+        <translation>Brukernavn og passord for SMTP Auth</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="286"/>
         <source>Serveren krever at jeg logger inn</source>
-        <translation type="unfinished"></translation>
+        <translation>Serveren krever at jeg logger inn</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="304"/>
         <source>Brukernavn:</source>
-        <translation type="unfinished"></translation>
+        <translation>Brukernavn:</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="333"/>
         <source>Husk</source>
-        <translation type="unfinished"></translation>
+        <translation>Husk</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/epost.ui" line="343"/>
         <source>Passord:</source>
-        <translation type="unfinished"></translation>
+        <translation>Passord:</translation>
     </message>
 </context>
 <context>
@@ -950,7 +956,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="115"/>
         <source>Postn&amp;ummer</source>
-        <translation type="unfinished"></translation>
+        <translation>Postn&amp;ummer</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="128"/>
@@ -960,12 +966,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="135"/>
         <source>Postste&amp;d</source>
-        <translation type="unfinished"></translation>
+        <translation>Postste&amp;d</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="151"/>
         <source>&amp;Telefon</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Telefon</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="164"/>
@@ -977,17 +983,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="171"/>
         <source>Mo&amp;biltelefon</source>
-        <translation type="unfinished"></translation>
+        <translation>Mo&amp;biltelefon</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="191"/>
         <source>Telefak&amp;s</source>
-        <translation type="unfinished"></translation>
+        <translation>Telefak&amp;s</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="211"/>
         <source>Kontonumme&amp;r</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontonumme&amp;r</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="224"/>
@@ -997,23 +1003,24 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="246"/>
         <source>Firma</source>
-        <translation type="unfinished"></translation>
+        <translation>Firma</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="257"/>
         <source>Firma&amp;navn</source>
-        <translation type="unfinished"></translation>
+        <translation>Firma&amp;navn</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="273"/>
         <source>Or&amp;ganisasjonsnummer</source>
-        <translation type="unfinished"></translation>
+        <translation>Or&amp;ganisasjonsnummer</translation>
     </message>
     <message utf8="true">
         <location filename="../finfaktura/ui/firmainfo.ui" line="289"/>
         <source>Standard
 betalings&amp;vilkår</source>
-        <translation type="unfinished"></translation>
+        <translation>Standard
+betalings&amp;vilkår</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="316"/>
@@ -1023,22 +1030,22 @@ betalings&amp;vilkår</source>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="329"/>
         <source> %</source>
-        <translation type="unfinished"></translation>
+        <translation> %</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="339"/>
         <source>Forfa&amp;ll</source>
-        <translation type="unfinished"></translation>
+        <translation>Forfa&amp;ll</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="352"/>
         <source> dager</source>
-        <translation type="unfinished"></translation>
+        <translation> dager</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="381"/>
         <source>Logo</source>
-        <translation type="unfinished"></translation>
+        <translation>Logo</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="409"/>
@@ -1051,47 +1058,47 @@ betalings&amp;vilkår</source>
     <message>
         <location filename="../finfaktura/ui/sendepost.ui" line="14"/>
         <source>Send faktura per epost</source>
-        <translation type="unfinished"></translation>
+        <translation>Send faktura per epost</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sendepost.ui" line="23"/>
         <source>Sender epost til</source>
-        <translation type="unfinished"></translation>
+        <translation>Sender epost til</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sendepost.ui" line="86"/>
         <source>Filnavn</source>
-        <translation type="unfinished"></translation>
+        <translation>Filnavn</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sendepost.ui" line="89"/>
         <source>Fullt navn</source>
-        <translation type="unfinished"></translation>
+        <translation>Fullt navn</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sendepost.ui" line="94"/>
         <source>Mimetype</source>
-        <translation type="unfinished"></translation>
+        <translation>Mimetype</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sendepost.ui" line="97"/>
         <source>Hvilken mimetype (&apos;Content type&apos;) fila har</source>
-        <translation type="unfinished"></translation>
+        <translation>Hvilken mimetype (&apos;Content type&apos;) fila har</translation>
     </message>
     <message utf8="true">
         <location filename="../finfaktura/ui/sendepost.ui" line="102"/>
         <source>Størrelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Størrelse</translation>
     </message>
     <message utf8="true">
         <location filename="../finfaktura/ui/sendepost.ui" line="105"/>
         <source>Filas størrelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Filas størrelse</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/sendepost.ui" line="113"/>
         <source>Legg ved fil...</source>
-        <translation type="unfinished"></translation>
+        <translation>Legg ved fil...</translation>
     </message>
 </context>
 </TS>

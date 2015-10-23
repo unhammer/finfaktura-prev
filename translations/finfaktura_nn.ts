@@ -107,7 +107,7 @@
     <message>
         <location filename="../finfaktura/ui/faktura.ui" line="134"/>
         <source>Mottaker</source>
-        <translation type="unfinished"></translation>
+        <translation>Mottakar</translation>
     </message>
     <message utf8="true">
         <location filename="../finfaktura/ui/faktura.ui" line="139"/>

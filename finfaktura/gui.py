@@ -1268,6 +1268,15 @@ class tekstVindu(object):
 
 def start():
     app = QtGui.QApplication(sys.argv)
+
+    qtTranslator = QtCore.QTranslator()
+    
+    logging.info("Loading translations %s" % ("finfaktura_" + QtCore.QLocale.system().name()))
+    myappTranslator = QtCore.QTranslator()
+    if not myappTranslator.load("finfaktura_" + QtCore.QLocale.system().name(), "." + "/translations"):
+	logging.warn("Could not load application translations from %s/translations/%s.qm" % (app.applicationDirPath(), "finfaktura_" + QtCore.QLocale.system().name()))
+    app.installTranslator(myappTranslator)
+
     ff = FinFaktura()
     QtCore.QObject.connect(app, QtCore.SIGNAL("lastWindowClosed()"), ff.avslutt)
     return app.exec_()

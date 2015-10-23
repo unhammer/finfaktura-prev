@@ -925,27 +925,27 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="16"/>
         <source>Informasjon om firmaet</source>
-        <translation type="unfinished"></translation>
+        <translation>Informasjon om firmaet</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="46"/>
         <source>Adresse</source>
-        <translation type="unfinished"></translation>
+        <translation>Adresse</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="57"/>
         <source>&amp;Kontaktperson</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kontaktperson</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="73"/>
         <source>&amp;Epost</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Epost</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="89"/>
         <source>&amp;Adresse</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Adresse</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="115"/>
@@ -955,7 +955,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="128"/>
         <source>0000; </source>
-        <translation type="unfinished"></translation>
+        <translation>0000; </translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="135"/>
@@ -972,7 +972,7 @@ p, li { white-space: pre-wrap; }
         <location filename="../finfaktura/ui/firmainfo.ui" line="184"/>
         <location filename="../finfaktura/ui/firmainfo.ui" line="204"/>
         <source>00000000; </source>
-        <translation type="unfinished"></translation>
+        <translation>00000000; </translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="171"/>
@@ -992,7 +992,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="224"/>
         <source>00000000000; </source>
-        <translation type="unfinished"></translation>
+        <translation>00000000000; </translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="246"/>
@@ -1018,7 +1018,7 @@ betalings&amp;vilkår</source>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="316"/>
         <source>&amp;MVA-sats</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;MVA-sats</translation>
     </message>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="329"/>
@@ -1043,7 +1043,7 @@ betalings&amp;vilkår</source>
     <message>
         <location filename="../finfaktura/ui/firmainfo.ui" line="409"/>
         <source>&amp;Finn logo</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Finn logo</translation>
     </message>
 </context>
 <context>

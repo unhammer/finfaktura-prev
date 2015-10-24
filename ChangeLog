@@ -1,3 +1,7 @@
+2015-10-17 v2.1.0 Johnny A. Solbu
+
+	* Første versjon med støtte for oversettelser. (Takk til Eivind Tagseth)
+
 2015-10-17 v2.0.10 Johnny A. Solbu
 
 	* finfaktura/f60.py: Fikser bug 86, hvor reportlab 3 ikke laget fakturaer med fakturafakta.

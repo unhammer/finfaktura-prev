@@ -1,3 +1,10 @@
+finfaktura (2.1.0-1) stable; urgency=low
+
+  * Ny versjon
+  * Støtte for oversettelser
+
+ -- Johnny A. Solbu <johnny@solbu.net>  Sat, 24 Oct 02:03:19 +0200
+
 finfaktura (2.0.9-1) stable; urgency=low
 
   * Ny versjon

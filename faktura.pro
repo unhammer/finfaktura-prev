@@ -4,7 +4,7 @@
 
 TEMPLATE = app
 TARGET = faktura
-DEPENDPATH += . scripts finfaktura/ui
+DEPENDPATH += . scripts translations finfaktura/ui
 INCLUDEPATH += .
 
 # Input

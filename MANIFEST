@@ -36,5 +36,6 @@ finfaktura.desktop
 scripts/oppgrader-databasen-til-1.0.sh
 scripts/fakturanummer.ui
 scripts/fakturanummer.py
+translations/finfaktura_en.qm
 translations/finfaktura_nb.qm
 translations/finfaktura_nn.qm

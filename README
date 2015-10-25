@@ -1,6 +1,10 @@
 Fryktelig fin faktura
 =====================
 
+To force the program to start in english, run "LC_ALL=en_US ./faktura".
+Some strings might still be in norwegian, as this program is made exlusively for use in Norway.
+
+
 Dette er et enkelt program for å lage fakturaer. Fakturaene lages som pdf_ og kan skrives ut på skjema f60 eller sendes som epost. Programmet lager en database over varer, kunder, og utsendte fakturaer.
 
 Programmet startes ved å kjøre «faktura». For tekstmodus, bruk opsjonen -i. Flere opsjoner_ er også mulig.

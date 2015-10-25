@@ -19,6 +19,7 @@
     <file>faktura.sql</file>
   </qresource>
   <qresource>
+    <file>translations/finfaktura_en.qm</file>
     <file>translations/finfaktura_nb.qm</file>
     <file>translations/finfaktura_nn.qm</file>
   </qresource>

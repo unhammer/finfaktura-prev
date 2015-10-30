@@ -96,7 +96,7 @@ except AttributeError, IndexError:
     logging.warn('Reportlab-versjon kunne ikke leses. Dette er ikke versjon 2 eller nyere')
     REPORTLAB2 = False
 
-PDFUTSKRIFT = '/usr/bin/okular'
+PDFUTSKRIFT = '/usr/bin/xdg-open'
 
 #LOCALE = True
 ##LOCALE = False

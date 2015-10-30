@@ -39,6 +39,7 @@ class finfakturaOppsett(finfaktura_oppsett_ui.Ui_FinFakturaOppsett):
         if self.faktura.oppsett.vispdf:
             self.oppsettProgramVisPDF.addItem('Gjeldende valg (%s)' % self.faktura.oppsett.vispdf, QtCore.QVariant(self.faktura.oppsett.vispdf))
         p = {
+             'Standard PDF-program ': '/usr/bin/xdg-open',
              'kpdf (KDE3)': '/usr/bin/kpdf',
              'okular (KDE4)': '/usr/bin/okular',
              'evince (Gnome)': '/usr/bin/evince',

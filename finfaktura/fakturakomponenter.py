@@ -22,7 +22,7 @@ from PyQt4 import QtCore
 
 from fakturafeil import *
 
-PDFVIS = "/usr/bin/okular"
+PDFVIS = "/usr/bin/xdg-open"
 
 class fakturaKomponent:
     _egenskaper = {}

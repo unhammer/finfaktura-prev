@@ -11,7 +11,7 @@
 
 import sys, logging, subprocess
 
-PDFVIS = "/usr/bin/okular"
+PDFVIS = "/usr/bin/xdg-open"
 
 def vis(filnavn, program=PDFVIS):
     p = program.encode(sys.getfilesystemencoding()) # subprocess.call på windows takler ikke unicode!

@@ -37,7 +37,7 @@ try:
 except ImportError, (e):
     raise RessurserManglerFeil(e)
 
-PDFVIS = "/usr/bin/okular" # program for å vise PDF
+PDFVIS = "/usr/bin/xdg-open" # program for å vise PDF
 
 class FinFaktura(QtGui.QMainWindow):#Ui_MainWindow): ## leser gui fra faktura_ui.py
     db = None

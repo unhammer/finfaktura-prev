@@ -1,4 +1,8 @@
-2015-10-17 v2.1.0 Johnny A. Solbu
+2015-10-30 v2.1.1 Johnny A. Solbu
+
+	* Ikke hardkode at okular brukes som PDF-program, bruk xdg-open i stedet.
+
+2015-10-25 v2.1.0 Johnny A. Solbu
 
 	* Første versjon med støtte for oversettelser. (Takk til Eivind Tagseth)
 

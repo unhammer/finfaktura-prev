@@ -43,6 +43,7 @@ setup(name="finfaktura",
       packages=['finfaktura', 'finfaktura.ui'],
       data_files=[
             ('share/finfaktura/scripts', glob.glob('scripts/*')),
+            ('share/finfaktura/translations', glob.glob('translations/*.qm')),
            ],
       scripts=["faktura"],
       license="GPL2",

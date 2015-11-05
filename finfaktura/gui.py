@@ -1273,7 +1273,7 @@ def start():
     
     logging.info("Loading translations %s" % ("finfaktura_" + QtCore.QLocale.system().name()))
     myappTranslator = QtCore.QTranslator()
-    if not myappTranslator.load("finfaktura_" + QtCore.QLocale.system().name(), "." + "/translations"):
+    if not myappTranslator.load("finfaktura_" + QtCore.QLocale.system().name(), ":/translations"):
 	logging.warn("Could not load application translations from %s/translations/%s.qm" % (app.applicationDirPath(), "finfaktura_" + QtCore.QLocale.system().name()))
     app.installTranslator(myappTranslator)
 

@@ -1,7 +1,7 @@
 %define bname	faktura
 
 Name:		finfaktura
-Version:	2.1.0
+Version:	2.1.2
 Release:	%mkrel 1
 Summary:	Create, review and administer norwegian invoices
 License:	GPLv2
@@ -18,8 +18,6 @@ Requires:	sqlite3-tools
 %description
 Create, review and administer invoices for use in Norway
 and print on the F60 faktura form or send by email as PDF.
-
-This program is unfortunately in Norwegian only
 
 
 %prep
@@ -46,10 +44,16 @@ install -m644 %{bname}.1 -D %{buildroot}%{_mandir}/man1/%{bname}.1
 
 
 %changelog
+* Thu Nov 05 2015 Johnny A. Solbu <johnny@solbu.net> 2.1.2-1.solbu5
+- New version: 2.1.2
+
+* Sat Oct 31 2015 Johnny A. Solbu <johnny@solbu.net> 2.1.1-1.solbu5
+- New version: 2.1.1
+
 * Sat Oct 24 2015 Johnny A. Solbu <johnny@solbu.net> 2.1.0-1.solbu5
 - New version: 2.1.0
 
-* Wed Oct 17 2015 Johnny A. Solbu <johnny@solbu.net> 2.0.10-1.solbu5
+* Sat Oct 17 2015 Johnny A. Solbu <johnny@solbu.net> 2.0.10-1.solbu5
 - New version: 2.0.10
 
 * Mon Aug 17 2015 Johnny A. Solbu <johnny@solbu.net> 2.0.9-1.solbu5

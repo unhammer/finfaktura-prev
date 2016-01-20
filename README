@@ -2,7 +2,7 @@ Fryktelig fin faktura
 =====================
 
 To force the program to start in english, run "LC_ALL=en_US ./faktura".
-Some strings might still be in norwegian, as this program is made exlusively for use in Norway.
+Some hard coded strings might still be in norwegian, as this program is made exlusively for use in Norway.
 
 
 Dette er et enkelt program for å lage fakturaer. Fakturaene lages som pdf_ og kan skrives ut på skjema f60 eller sendes som epost. Programmet lager en database over varer, kunder, og utsendte fakturaer.
@@ -38,15 +38,16 @@ Vi har også en kanal på Freenode: #finfaktura
 Systemkrav
 ==========
 
-Programmet er laget for å kjøre på GNU/Linux, Windows og Apple osx.
+Programmet er laget for å kjøre på GNU/Linux, Windows og Apple osx, men utviklerteamet bruker og tester kun i GNU/Linux. Vi kan derfor ikke garantere at det fungerer i andre operativsystemer.
+Fryktelig fin faktura utvikles og testes i Mageia med python 2.7.
 
 Følgende moduler er påkrevet:
 
-- python_, versjon 2.5 eller nyere. Fryktelig fin faktura utvikles og testes i python2.7 på Mageia Linux. Andre versjoner kan fungere.
+- python_ 2, versjon 2.5 eller nyere.
 - python-modulen PyQt4_, versjon 4.4 eller nyere.
 - python-modulen Reportlab_, versjon 2 eller nyere.
 
-Disse oppfylles automatisk når du installerer fra pakke (GNU/Linux) eller medfølgende installasjonsprogram (Windows).
+Disse oppfylles automatisk når du installerer fra deb/rpm-pakke.
 
 .. _python: http://python.org/
 .. _PyQt4: http://www.riverbankcomputing.com/software/pyqt/intro

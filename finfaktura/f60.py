@@ -470,7 +470,7 @@ class f60:
                                                             self.kunde['nr']))
         self.canvas.setTitle("Elektronisk faktura fra %s, utstedt den %s" % (self.firma['firmanavn'],
                                                                              self.faktura['utstedt']))
-        self.canvas.setAuthor("f60.py versjon %s fra Fryktelig Fin Faktura (finfaktura.googlecode.com)" % __version__)
+        self.canvas.setAuthor("f60.py versjon %s fra Fryktelig Fin Faktura (finfaktura.sourceforge.net)" % __version__)
         
 
         # logo

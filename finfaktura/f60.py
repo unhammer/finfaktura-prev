@@ -85,10 +85,10 @@ except ImportError:
     REPORTLAB=False
     raise f60InstallasjonsFeil("python-modulen `reportlab' mangler. Kan ikke lage PDF!")
 
-__version__ = '0.18'
+__version__ = '0.19'
 __license__ = 'GPLv2'
 __author__ = 'H. Gulldahl (havard@gulldahl.no)'
-__date__ = '$Date: 2015-08-16 20:49:16 +0200 (sø. 16. aug. 2015) $'
+__date__ = '$Date: 2017-06-06 07:57:07 +0200 (ti. 06. juni 2017) $'
 
 try:
     REPORTLAB2 = (reportlab.Version[0] >= '2')

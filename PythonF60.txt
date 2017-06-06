@@ -1,0 +1,114 @@
+PythonF60  
+Slik bruker du f60.py til å lage PDF-faktura
+Innledning
+
+F60.py er en python-modul for å produsere en faktura i PDF-format. Dokumentet er laget til å samsvare med Norsk standard Giro F60, og kan skrives ut på slike blanketter.
+F60.py brukes av finfaktura, men kan også brukes uavhengig, i ditt eget python-program. I det følgende vises hvordan.
+Vil du bruke F60.py for seg selv, kan du laste modulen ned fra nedlastingslista.
+F60.py bruker reportlab til å lage PDF-filer. Denne pakken må du installere (den heter python-reportlab i linux).
+
+    Innledning
+    Eksempel
+    Informasjon om fakturaen
+        Fakturainfo
+        Firmainfo
+        Kundeinfo
+        Ordrelinje
+        Logo
+        KID
+        Datoformat
+    Format
+        Epost
+        Papir/Utskrift
+        Kvittering
+
+Eksempel
+
+import f60
+filnavn = /tmp/testfaktura.pdf
+faktura = f60(filnavn, overskriv=True)
+faktura.settKundeinfo(06, "Topert\nRopertgata 33\n9022 Nissedal")
+faktura.settFakturainfo(
+  fakturanr=03,
+  utstedtEpoch=1145542709,
+  forfallEpoch=1146546709,
+  fakturatekst=u"Produksjon i august",
+  vilkaar=u"Takk for handelen, kom gjerne igjen.",
+  kid=True)
+faktura.settFirmainfo({firmanavn:Firma Ein,
+                        kontaktperson:Rattatta Hansen,
+                        adresse:uSurdalsøyra,
+                        postnummer:8999,
+                        poststed:uFløya,
+                        kontonummer:99999999999,
+                        organisasjonsnummer:876876,
+                        telefon:23233322,
+                        epost:ratata@ta.no})
+faktura.settOrdrelinje([ ["Leder", 1, 300, 25], [Reportasje, 1, 3000, 25], ])
+if faktura.lagEpost():
+    print "Kvittering laget i", filnavn
+
+Gir følgende faktura:
+
+Informasjon om fakturaen
+Fakturainfo
+Firmainfo
+Kundeinfo
+Ordrelinje
+
+Logo
+
+Metode: .settLogo(logo)
+
+Du kan sette inn en firmalogo med metoden .settLogo(logo). Argumentet logo er 1) et filnavn, 2) bildedata eller 3) et PIL-objekt.
+
+Dersom bildefila eller bildedata ikke er i JPEG-format, må PIL være installert.
+
+Logoen blir installert oppe i venstre hjørne av fakturaen, med maks-størrelse 25*25 mm! Er bildet større, blir det nedskalert. Det er likevel lurest å skalere logoen selv, siden det ofte gir bedre resultater.
+
+KID
+
+    Metode: .lagKid()
+    Metode: .sjekkKid()
+    Metode: .lagKontrollsifferMod10()
+    Metode: .lagKontrollsifferMod11() 
+
+f60 kan generere, kontrollere og sette KID. .lagKid() setter sammen en KID av kundenummer + fakturanummer + kontrollsiffer.
+Kontrollsifferet skal regnes ut etter mod10 eller mod11-algoritmen, slik BBS Nordic oppgir den i Kravspek for OCR. I f60.py brukes som standard mod10.
+Se detaljer i  issue#38 .
+
+Sett kundeinfo først
+
+Siden f60 bruker kundenummer for å generere KID, må du huske å sette kundeinfoen (.settKundeinfo()) før du setter fakturainfoen dersom du skal autogenerere KID.
+Datoformat
+
+Metode: .settDatoformat(format)
+
+Standard datoformat er %Y-%m-%d, for eksempel 2009-01-31. Du kan oppgi ditt eget datoformat.
+
+Lista over gyldige formatteringskoder finner du på python.org.
+Format
+
+Fakturaene produseres i filformatet PDF gjennom hjelpebiblioteket reportlab. Last ned en åpen pdf-leser.
+
+Videre kan fakturaene få ulike layout, avhengig av hvordan de skal sendes.
+Epost
+
+Metode: .lagEpost()
+
+Her imiteres en ferdig utfylt giroblankett, altså en digital kopi av et skjema F60-1 med gule felter, og betalingsinformasjon.
+
+Vær obs på at det ikke er lov å skrive denne ut til papir. Du må skrive ut på en trykket blankett! Da bruker du .lagPost() -- se neste punkt.
+Papir/Utskrift
+
+Metode: .lagPost()
+
+Dette valget gir en PDF-fil som egner seg for utskrift på et skjema F60-1, altså bare betalingsinformasjonen.
+Kvittering
+
+Metode: .lagKvittering()
+
+Dette er en spesiell versjon av den imiterte giroblanketten, hvor påskriften "KVITTERING" er trykket på tvers over arket. Dette er den kopien av fordringen du skal beholde.
+
+Hensikten med denne layouten er å unngå sammenblanding dersom du velger å skrive ut kvitteringen.
+

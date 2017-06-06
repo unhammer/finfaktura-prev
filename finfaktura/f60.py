@@ -456,7 +456,7 @@ class f60:
         merke.setFillGray(0.6)
         merke.setFont("Helvetica", 70)
         merke.setTextOrigin(90*mm, 30*mm)
-        merke.textLines("KVITTERING\n\n\nKVITTERING")
+        merke.textLines(split("KVITTERING\n\n\nKVITTERING"))
         self.canvas.drawText(merke)
         self.canvas.restoreState() # henter tilbake normalt oppsett
 

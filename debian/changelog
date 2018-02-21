@@ -1,3 +1,10 @@
+finfaktura (2.1.5-1) stable; urgency=low
+
+  * Ny versjon
+  * Legg til Gui-logo
+
+ -- Johnny A. Solbu <johnny@solbu.net>  Wed, 21 Feb 2018 15:08:07 +0100
+
 finfaktura (2.1.4-1) stable; urgency=medium
 
   * Ny versjon

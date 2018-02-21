@@ -55,6 +55,7 @@ binary-common:
 	dh_installchangelogs
 	dh_installdocs
 	dh_install finfaktura.png usr/share/icons
+	dh_install finfaktura-icon.png usr/share/icons
 	dh_desktop faktura.desktop
 	dh_install finfaktura.desktop usr/share/applications/kde
 	dh_installmenu

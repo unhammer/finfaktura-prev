@@ -50,6 +50,7 @@ class FinFaktura(QtGui.QMainWindow):#Ui_MainWindow): ## leser gui fra faktura_ui
         self.gui = Ui_FinFaktura()
         self.gui.setupUi(self)
         self.show()
+	self.setWindowIcon(QtGui.QIcon('finfaktura-icon.png'))
 
         if not PRODUKSJONSVERSJON:
             self.setWindowTitle("FRYKTELIG FIN FADESE (utviklerversjon)")

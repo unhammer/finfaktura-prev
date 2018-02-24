@@ -27,6 +27,8 @@ finfaktura/ui/finfaktura_oppsett_ui.py
 finfaktura/ui/firmainfo_ui.py
 finfaktura/ui/sendepost_ui.py
 finfaktura/ui/faktura_rc.py
+finfaktura/ui/fakturanummer.py
+finfaktura/fakturanummer.py
 AUTHORS
 ChangeLog
 README
@@ -37,8 +39,6 @@ finfaktura.png
 finfaktura-icon.png
 finfaktura.desktop
 scripts/oppgrader-databasen-til-1.0.sh
-scripts/fakturanummer.ui
-scripts/fakturanummer.py
 translations/finfaktura_en.qm
 translations/finfaktura_nb.qm
 translations/finfaktura_nn.qm

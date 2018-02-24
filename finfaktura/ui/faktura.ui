@@ -1985,6 +1985,7 @@
     <addaction name="actionDitt_firma"/>
     <addaction name="actionEpost"/>
     <addaction name="actionProgrammer"/>
+    <addaction name="actionF_rste_fakturanummer"/>
     <addaction name="actionSikkerhetskopi"/>
     <addaction name="separator"/>
     <addaction name="actionAvslutt"/>
@@ -2044,6 +2045,11 @@
    </property>
    <property name="shortcutContext">
     <enum>Qt::ApplicationShortcut</enum>
+   </property>
+  </action>
+  <action name="actionF_rste_fakturanummer">
+   <property name="text">
+    <string>Første fakturanummer</string>
    </property>
   </action>
  </widget>

@@ -8,7 +8,7 @@ DEPENDPATH += . scripts translations finfaktura/ui
 INCLUDEPATH += .
 
 # Input
-FORMS += scripts/fakturanummer.ui \
+FORMS += finfaktura/ui/fakturanummer.ui \
          finfaktura/ui/epost.ui \
          finfaktura/ui/faktura.ui \
          finfaktura/ui/finfaktura_oppsett.ui \

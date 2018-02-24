@@ -33,7 +33,7 @@ from PyQt4 import QtCore, QtGui, uic
 try:
     from finfaktura.ui.faktura_ui import Ui_FinFaktura
     import finfaktura.ui.faktura_rc # last inn logoer
-    import gui_sendepost, gui_epost, gui_finfaktura_oppsett, gui_firma
+    import gui_sendepost, gui_epost, gui_finfaktura_oppsett, gui_firma, gui_fakturanummer
 except ImportError, (e):
     raise RessurserManglerFeil(e)
 
@@ -63,6 +63,7 @@ class FinFaktura(QtGui.QMainWindow):#Ui_MainWindow): ## leser gui fra faktura_ui
         QtCore.QObject.connect(self.gui.actionProgrammer, QtCore.SIGNAL("activated()"), self.visProgramOppsett)
         QtCore.QObject.connect(self.gui.actionOm_Finfaktura, QtCore.SIGNAL("activated()"), lambda: self.visTekstVindu('om'))
         QtCore.QObject.connect(self.gui.actionLisens, QtCore.SIGNAL("activated()"), lambda: self.visTekstVindu('lisens'))
+        QtCore.QObject.connect(self.gui.actionF_rste_fakturanummer, QtCore.SIGNAL("activated()"), self.visFakturanummer)
         #QtCore.QObject.connect(self.gui.actionLover_og_regler, QtCore.SIGNAL("activated()"), self.visLover)
         #QtCore.QObject.connect(self.gui.actionSikkerhetskopi, QtCore.SIGNAL("activated()"), self.visSikkerhetskopi)
 
@@ -1197,6 +1198,10 @@ class FinFaktura(QtGui.QMainWindow):#Ui_MainWindow): ## leser gui fra faktura_ui
             self.alert(unicode(e))
 
 ############## INTERNE DIALOGER ###################
+
+    def visFakturanummer(self):
+	dialog = gui_fakturanummer.nummersettergui()
+	res = dialog.exec_()
 
     def visEpostOppsett(self):
         dialog = gui_epost.epostOppsett(self.faktura)

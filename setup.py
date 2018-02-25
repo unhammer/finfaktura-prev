@@ -41,6 +41,8 @@ setup(name="finfaktura",
       author_email="johnny@solbu.net",
       url="https://sourceforge.net/projects/finfaktura/",
       packages=['finfaktura', 'finfaktura.ui'],
+      package_data={'': ['ui/fakturanummer.ui']},
+      include_package_data=True,
       data_files=[
             ('share/finfaktura/scripts', glob.glob('scripts/*')),
             ('share/finfaktura/translations', glob.glob('translations/*.qm')),

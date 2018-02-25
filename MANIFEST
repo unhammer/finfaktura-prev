@@ -1,4 +1,5 @@
 setup.py
+setup.cfg
 faktura
 faktura.1
 finfaktura/__init__.py
@@ -27,8 +28,9 @@ finfaktura/ui/finfaktura_oppsett_ui.py
 finfaktura/ui/firmainfo_ui.py
 finfaktura/ui/sendepost_ui.py
 finfaktura/ui/faktura_rc.py
-finfaktura/ui/fakturanummer.py
-finfaktura/fakturanummer.py
+finfaktura/ui/fakturanummer_ui.py
+finfaktura/ui/fakturanummer.ui
+finfaktura/gui_fakturanummer.py
 AUTHORS
 ChangeLog
 README

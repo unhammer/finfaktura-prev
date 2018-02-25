@@ -1,7 +1,7 @@
 %define bname	faktura
 
 Name:		finfaktura
-Version:	2.1.5
+Version:	2.2.0
 Release:	%mkrel 1
 Summary:	Create, review and administer norwegian invoices
 License:	GPLv2
@@ -45,8 +45,8 @@ install -m644 %{bname}.1 -D %{buildroot}%{_mandir}/man1/%{bname}.1
 
 
 %changelog
-* Wed Feb 21 2018 Johnny A. Solbu <johnny@solbu.net> 2.1.5-1.solbu5
-- New version: 2.1.5
+* Sun Feb 25 2018 Johnny A. Solbu <johnny@solbu.net> 2.2.0-1.solbu5
+- New version: 2.2.0
 
 * Wed Jun 07 2017 Johnny A. Solbu <johnny@solbu.net> 2.1.4-1.solbu5
 - New version: 2.1.4

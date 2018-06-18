@@ -85,10 +85,10 @@ except ImportError:
     REPORTLAB=False
     raise f60InstallasjonsFeil("python-modulen `reportlab' mangler. Kan ikke lage PDF!")
 
-__version__ = '0.19'
+__version__ = '0.20'
 __license__ = 'GPLv2'
 __author__ = 'H. Gulldahl (havard@gulldahl.no)'
-__date__ = '$Date: 2017-06-06 07:57:07 +0200 (ti. 06. juni 2017) $'
+__date__ = '$Date: 2018-06-18 20:55:37 +0200 (ma. 18. juni 2018) $'
 
 try:
     REPORTLAB2 = (reportlab.Version[0] >= '2')
@@ -478,7 +478,7 @@ class f60:
         if self.firma['logo']:
             logging.debug("Har logo!")
             try:
-                import Image
+                from PIL import Image
             except ImportError:
                 logging.warn('Kunne ikke importere PIL. Du kan få problemer hvis logoen ikke er i JPEG')
                 logo = self.firma['logo'] # la reportlab ta seg av det, kanskje det går

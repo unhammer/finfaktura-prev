@@ -1,3 +1,10 @@
+finfaktura (2.2.1-1) stable; urgency=low
+
+  * Ny versjon
+  * Fiks PIL-importering (Bugrapport via IRC)
+
+ -- Johnny A. Solbu <johnny@solbu.net>  Mon, 18 Jun 2018 21:52:24 +0100
+
 finfaktura (2.2.0-1) stable; urgency=low
 
   * Ny versjon

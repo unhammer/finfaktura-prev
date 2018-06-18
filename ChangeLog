@@ -1,47 +1,51 @@
-2018-02-25 v2.2.0 Johnny A. Solbu
+v2.2.1 2018-06-18  Johnny A. Solbu <johnny@solbu.net>
+
+	* f60.py: Fiks «Kunne ikke importere PIL»
+
+v2.2.0 2018-02-25  Johnny A. Solbu <johnny@solbu.net>
 
 	* Legg til gui-ikon
 	* Legg «Første fakturanummer» i menyen
 	* Legg til dokumentasjon i «setup.py bdist_rpm»
 
-2017-06-06 v2.1.4 Johnny A. Solbu
+v2.1.4 2017-06-06  Johnny A. Solbu <johnny@solbu.net>
 
 	* f60.py: Få tilbake «KVITTERING» på utskrevne kvitteringer
 
-2016-11-16 v2.1.3 Johnny A. Solbu
+v2.1.3 2016-11-16  Johnny A. Solbu <johnny@solbu.net>
 
 	* gui.py: Ikke krev e-postadresse på kunder. Ikke alle kunder har/oppgir epost
 
-2015-11-06 v2.1.2 Johnny A. Solbu
+v2.1.2 2015-11-06  Johnny A. Solbu <johnny@solbu.net>
 
 	* setup.py: Installer oversettelser så de fungerer i Linux
 
-2015-10-30 v2.1.1 Johnny A. Solbu
+v2.1.1 2015-10-30  Johnny A. Solbu <johnny@solbu.net>
 
 	* Ikke hardkode at okular brukes som PDF-program, bruk xdg-open i stedet.
 
-2015-10-25 v2.1.0 Johnny A. Solbu
+v2.1.0 2015-10-25  Johnny A. Solbu <johnny@solbu.net>
 
 	* Første versjon med støtte for oversettelser. (Takk til Eivind Tagseth)
 
-2015-10-17 v2.0.10 Johnny A. Solbu
+v2.0.10 2015-10-17  Johnny A. Solbu <johnny@solbu.net>
 
 	* finfaktura/f60.py: Fikser bug 86, hvor reportlab 3 ikke laget fakturaer med fakturafakta.
 	* Fjerner siste rest av linker til Google code-siden
 	* Ikke krev organisasjonsnummer. Ikke alle som fakturerer har organisasjonsnummer.
 
-2015-08-17 v2.0.9 Johnny A. Solbu
+v2.0.9 2015-08-17  Johnny A. Solbu <johnny@solbu.net>
 
 	* finfaktura/f60.py: Kontrollsiffer til beløp beregnes på feil grunnlag
 	* Fiks Bug 81. Erstat «/» med «_» ved generering av pdf-filer hvor firmanavn har slash i navnet (A/S)
 	* Endre navn på kommandofil: faktura.py -> faktura, for korrekt installasjon på GNU/Linux
 
-2015-08-12 v2.0.8 Johnny A. Solbu
+v2.0.8 2015-08-12  Johnny A. Solbu <johnny@solbu.net>
 
 	* Fiks krasj med UnicodeDecodeError ved oppstart
 	* Noen steder har man kun postnummer og sted men ikke veiadresser, ikke krev veiadresse
 
-2015-07-30 v2.0.7 Johnny A. Solbu
+v2.0.7 2015-07-30  Johnny A. Solbu <johnny@solbu.net>
 
 	* Ikke krev kontaktperson
 	* Fiks mellomrom mellom kr og beløp

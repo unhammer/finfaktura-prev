@@ -359,10 +359,10 @@ class fakturaFirmainfo(fakturaKomponent):
     def __str__(self):
         return u"""
       == FIRMA: %(firmanavn)s ==
-      Kontakt: %(kontaktperson)s
-      Adresse: %(adresse)s, %(postnummer)04i %(poststed)s
-      Konto  : %(kontonummer)011i
-      Org.nr : %(organisasjonsnummer)s
+      Kontakt : %(kontaktperson)s
+      Adresse : %(adresse)s, %(postnummer)04i %(poststed)s
+      Konto   : %(kontonummer)011i
+      Org.nr  : %(organisasjonsnummer)s
       """ % (self._egenskaper)
 
     #def nyId(self):

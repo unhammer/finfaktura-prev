@@ -23,8 +23,7 @@ Endre fakturanummer
 
 Det er nå mulig å endre første fakturanummer, men det virker kun dersom du ikke allerede har laget fakturaer. 
 Dette kan kun gjøres én gang. Du kan ikke endre dette tallet senere.
-i mappen scripts/ kan du kjøre programmet «./fakturanummer.py» og følge instruksjonene.
-Installerte du programmet via en GNU/Linux-pakke, finner du filen her: «/usr/share/finfaktura/scripts/fakturanummer.py»
+I Oppsett-menyen har du et valg som heter «Første fakturanummer». Klikk på den og følg instruksjonene.
 
 Diskusjonsgruppe
 ================

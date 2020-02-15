@@ -98,24 +98,33 @@ except AttributeError, IndexError:
 
 PDFUTSKRIFT = '/usr/bin/xdg-open'
 
-#LOCALE = True
-##LOCALE = False
-# sett norsk tegngiving (bl.a. for ',' som desimal og 'kr')
-##for x in ('norwegian', 'nb_NO.UTF8', 'nb_NO.ISO8859-1', 'nb_NO', 'nn_NO', 'no_NO', 'no'):
-##    # har ulike navn på ulike plattformer... sukk...
-##    try:
-##        locale.setlocale(locale.LC_ALL, x)
-##        logging.debug('satte locale : %s -> %s', x, locale.getlocale())
-##        LOCALE = True
-##        break
-##    except locale.Error, e:
-##        logging.debug('locale passet ikke på denne plattformen: %s', x)
-##        continue
-##
-##del x # rydd opp etter oss
-logging.debug('setter locale : %s', locale.getdefaultlocale())
-locale.setlocale(locale.LC_ALL, locale.getdefaultlocale())
-logging.debug('satte locale : %s', locale.getlocale())
+
+def setlocale():
+    LOCALE = False
+    # sett norsk tegngiving (bl.a. for ',' som desimal og 'kr')
+    for x in (
+            'nb_NO.utf8', 'nn_NO.utf8',    # git bash på Windows
+            'nb_NO.UTF-8', 'nn_NO.UTF-8',  # Ubuntu/Debian
+            'nb_NO.UTF8', 'nn_NO.UTF8',    # ?
+            'nb_NO.ISO8859-1',             # do we want to allow non-utf8?
+            'nb_NO', 'nn_NO',
+            'no_NO', 'no',
+            'norwegian',
+            locale.getdefaultlocale()):
+        # har ulike navn på ulike plattformer... sukk...
+        try:
+            locale.setlocale(locale.LC_ALL, x)
+            logging.debug('satte locale : %s -> %s', x, locale.getlocale())
+            LOCALE = True
+            break
+        except locale.Error, e:
+            logging.debug('locale passet ikke på denne plattformen: %s', x)
+            continue
+    logging.debug('locale endte opp som: %s', locale.getlocale())
+
+
+setlocale()
+
 
 class f60:
     "Lager en pdf etter malen til Giro F60-1, for utskrift eller elektronisk bruk"

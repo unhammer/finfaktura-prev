@@ -8,7 +8,8 @@ Some hard coded strings might still be in norwegian, as this program is made exl
 Dette er et enkelt program for å lage fakturaer. Fakturaene lages som pdf_ og kan skrives ut på skjema f60 eller sendes som epost. Programmet lager en database over varer, kunder, og utsendte fakturaer.
 
 Programmet startes ved å kjøre «faktura». For tekstmodus, bruk opsjonen -i. Flere opsjoner_ er også mulig.
-Miljøvariabelen_ FAKTURADIR kan brukes til å styre hvor databasen skal lagres. Eksempel:
+Miljøvariabelen_ FAKTURADIR kan brukes til å styre hvor databasen skal lagres. Dette kan brukes til å lage fakturaer for ulike firmaer.
+Eksempel:
 
 $ FAKTURADIR=/var/fakturadb ./faktura
 
@@ -39,6 +40,7 @@ Systemkrav
 
 Programmet er laget for å kjøre på GNU/Linux, Windows og Apple osx, men utviklerteamet bruker og tester kun i GNU/Linux. Vi kan derfor ikke garantere at det fungerer i andre operativsystemer.
 Fryktelig fin faktura utvikles og testes i Mageia med python 2.7.
+Programmet finnes foreløpig ikke i python3-utgave, da ingen av utviklerne egentlig kan python-programmering. :-)
 
 Følgende moduler er påkrevet:
 

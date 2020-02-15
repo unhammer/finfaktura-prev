@@ -21,7 +21,7 @@ Du finner mer informasjon om programmet, og informasjon om feilsøking på prosj
 Endre fakturanummer
 ===================
 
-Det er nå mulig å endre første fakturanummer, men det virker kun dersom du ikke allerede har laget fakturaer. 
+Det er nå mulig å endre første fakturanummer, men det virker kun dersom du ikke allerede har laget fakturaer.
 Dette kan kun gjøres én gang. Du kan ikke endre dette tallet senere.
 I Oppsett-menyen har du et valg som heter «Første fakturanummer». Klikk på den og følg instruksjonene.
 
@@ -53,6 +53,21 @@ Disse oppfylles automatisk når du installerer fra deb/rpm-pakke.
 .. _reportlab: http://www.reportlab.org/rl_toolkit.html
 
 
+Windows
+-------
+
+Det finnes ingen oppdatert Windows-installasjonsfil, men du kan få det
+til å kjøre ved å installere python2.7, hente
+PyQt4-4.11.4-cp27-cp27m-win_amd64.whl fra
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyqt4 og kjøre
+`pip2.7.exe install PyQt4-4.11.4-cp27-cp27m-win_amd64.whl` og
+`pip2.7.exe install reportlab`. Om du sjekker ut fra git, må du først få inn
+filene `faktura/ui/*_ui.py`. Du kan enten
+- kjøre `scripts/forbered_ressurser.sh` på Linux og kopiere over,
+- eller kjøre `scripts/forbered_ressurser.bat` på Windows (men då må du ha ymse qt4-program installert).
+- eller bare kopiere dem fra nyeste release.
+
+
 Opphavsrett
 ===========
 
@@ -67,4 +82,3 @@ Kjente feil og planlagte egenskaper
 ===================================
 
 Se https://sourceforge.net/p/finfaktura/tickets/
-

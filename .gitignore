@@ -1,3 +1,13 @@
 dist/
 build/
 *~
+**/*.pyc
+**/.mypy_cache/
+/finfaktura/ui/epost_ui.py
+/finfaktura/ui/faktura_rc.py
+/finfaktura/ui/faktura_ui.py
+/finfaktura/ui/fakturanummer_ui.py
+/finfaktura/ui/finfaktura_oppsett_ui.py
+/finfaktura/ui/firmainfo_ui.py
+/finfaktura/ui/sendepost_ui.py
+/finfaktura/ui/sikkerhetskopi_ui.py
